@@ -1,7 +1,7 @@
 
 alert('Boas vindas ao jogo do número secreto');
-let numeroSecreto = parseInt(Math.random()*10+1);
-
+let numeroMaximo = 10;
+let numeroSecreto = parseInt(Math.random()*numeroMaximo+1);
 // aqui está errado, eu preciso alterar a informação do console pois a pessoa pode ver o numero pelo inspetor
 console.log(numeroSecreto);
 let chute; // comentei o que estava declarado aqui = prompt ('Escolha um número entre um e trinta: ');
@@ -11,7 +11,7 @@ let tentativas=1;
 
 
 while (chute!=numeroSecreto) {
-        chute = prompt ('Escolha um número 1 um e 10: ');
+        chute = prompt (`Escolha um número 1 um e ${numeroMaximo}: `);
        
     // se o chute for igual ao numero secreto quero executar algo
     if (chute == numeroSecreto) {
