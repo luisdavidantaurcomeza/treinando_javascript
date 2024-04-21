@@ -17,7 +17,8 @@ while (chute!=numeroSecreto) {
     if (chute == numeroSecreto) {
         //alert(`Isso ai! Você descobriu o número secreto, que é ${numeroSecreto} com ${tentativas} tentativas`);
         //quero que o while não se repita mais, ou seja, pare.
-        break;
+        break;    
+        
     } else {
         if (chute > numeroSecreto) {
             alert(`O número secreto é menor que o ${chute}`);
